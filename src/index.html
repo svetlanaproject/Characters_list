@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Characters List</title>
+  </head>
+ 
+  <body class="my-5">
+
+    <div class="loader">
+      <img inline src="images/ring.svg" alt="loader">
+    </div>
+    
+    <div class="container characters-list container-sm container-md mx-auto px-4 text-center">
+    
+    </div>
+
+<!-- Modal -->
+
+    <div class="modal fade" id="characterModal" tabindex="-1" aria-labelledby="characterModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body p-0">
+            <div class="container-fluid m-0 p-0">
+              <div class="row">
+                <div class="col-5 gradient">
+                  <div class="avatar-img">
+                    <img src="https://rickandmortyapi.com/api/character/avatar/2.jpeg" class="rounded image" alt="">
+                  </div>
+                </div>
+                <div class="col-3 my-2">
+                  <dl>
+                    <dt>Name:</dt>
+                    <dd class="name"></dd>
+                    <dt>Status:</dt>
+                    <dd class="status"></dd>
+                    <dt>Species:</dt>
+                    <dd class="species"></dd>
+                  </dl>
+                </div>
+                <div class="col-4 my-2">
+                  <dl>
+                    <dt>Origin:</dt>
+                    <dd class="origin"></dd>
+                    <dt>Location:</dt>
+                    <dd class="location"></dd>
+                    <dt>Gender:</dt>
+                    <dd class="gender"></dd>
+                  </dl>
+                </div>
+            </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+<!-- Pagination -->
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item disabled">
+          <a id="prev" disabled class="page-link previous" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item">
+          <a class="page-link page" href="#">1</a>
+        </li>
+        <li class="page-item">
+          <a id="next" class="page-link next" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <button type="button" class="btn btn-primary" id="myBtn">to top</button>
+  </body>
+
+
+</html>
